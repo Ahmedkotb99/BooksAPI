@@ -7,8 +7,8 @@ import static io.restassured.RestAssured.when;
 
 public class tests {
 
-    public String BaseURI = "https://simple-books-api.click";
-    public String token;
+    public static String BaseURI = "https://simple-books-api.click";
+    public static String token;
 
     @Test
     public void getstatus() {
