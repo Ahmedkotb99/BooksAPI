@@ -8,6 +8,7 @@ import static io.restassured.RestAssured.when;
 public class tests {
 
     public String BaseURI = "https://simple-books-api.click";
+    public String token;
 
     @Test
     public void getstatus() {
@@ -35,7 +36,7 @@ public class tests {
                 .statusCode(201)
                 .extract().response();
 
-        String token = response.jsonPath().getString("accessToken");
+            token = response.jsonPath().getString("accessToken");
 
 
     }
